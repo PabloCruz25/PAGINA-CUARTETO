@@ -1,0 +1,575 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Estilos del body */
+body {
+    background-color: #5FCDD9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+}
+/* Estilos del header */
+header {
+    background-color: #027373;
+    color: #172026;
+}
+
+.nav-list li a:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+    color: #ffd700; /* Color de texto dorado */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del menú de navegación */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; 
+}
+
+.nav-list li {
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos del footer */
+
+div.fixed.footer  {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 10px solid #000000;
+    text-align: center;
+    padding: 20px;
+  }
+  footer {
+    text-align: center; /* Centra el texto en el pie de página */
+    padding: 10px; /* Espaciado interno */
+    background-color: #333; /* Color de fondo para el pie de página */
+    color: white; /* Color del texto en el pie de página */
+    position: relative; /* Asegura que el footer esté posicionado correctamente */
+    bottom: 0; /* Coloca el footer en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho de la página */
+}
+
+/* Estilos PAGINA INICIO */
+
+h1 {
+    font-size: 10em;
+    font-family: "Rozha One", serif;
+    /*font-family: "Poppins", sans-serif;*/
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 3em;
+    margin-top: 10px; /* Espaciado entre h1 y h2 */
+    /*font-family: "Rozha One", serif;*/
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilos para la imagen */
+
+   .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: space-between;
+
+   }
+
+.imagen {
+    align-content: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 15px;
+    border-radius: 30px;
+    max-width: 100%; /* Asegura que la imagen no exceda su contenedor */
+    height: auto;
+
+   
+}
+
+  /*ESTILOS DE PAGINA INFORMACION*/ 
+  .contenedor2 {
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre el título y la imagen */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 40px;
+}
+
+.contendor2 {
+    max-width: 50%; /* Limita el ancho del contenido */
+}
+
+.contenedor2 h2{
+    font-size: 6em;
+    font-family: "Rozha One", serif;
+    /*font-family: "Poppins", sans-serif;*/
+    font-weight: 800;
+    font-style: normal;
+    justify-content: space-between;
+}
+.contenedor2 p{
+    font-size: 2em;
+    margin-top: 10px; /* Espaciado entre h1 y h2 */
+    font-family: "Poppins", sans-serif;
+    /*font-family: "Rozha One", serif;*/
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+    .contenedor2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: space-between;
+   
+   }
+
+.descarga {
+    align-content: left;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    /*margin-top: px;*/
+    margin-right: 50 px;
+    border-radius: 30px;
+    max-width: 100%; /* Asegura que la imagen no exceda su contenedor */
+    height: auto;
+    width: 600px;
+   
+}
+
+
+    /*ESTILOS DE PAGINA DISCOGRAFIA*/ 
+
+    .disco h1 {
+        font-size: 5em;
+        font-family: "Rozha One", serif;
+        /*font-family: "Poppins", sans-serif;*/
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+    }  
+    #fotos h4{
+        font-size: 1em;
+       /* font-family: "Rozha One", serif;*/
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    #fotos img {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 1;
+        margin: 15px;
+        padding: 20px;
+        background-color: #027373;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    /*  Estilos para la sección de fotos  HACER RECUADRO*/
+.fotos {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px; /* Espaciado entre las imágenes */
+    justify-items: center; 
+    align-items: center; 
+    padding: 20px; 
+   
+}
+
+/*Estilos para los títulos de cada imagen */
+.fotos h4 {
+    text-align: center; 
+    margin-top: 10px; 
+    font-size: 16px; 
+}
+
+.fotos img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+.fotos img:hover {
+    transform: scale(1.05); 
+}
+
+/*ESTILOS DE PAGINA DISCOGRAFIA CANCIONES */ 
+.videos {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px; /* Espaciado entre las imágenes */
+    justify-items: center; 
+    align-items: center; 
+    padding: 20px; 
+   
+}
+
+/*Estilos para los títulos de cada imagen */
+.videos h4 {
+    text-align: center; 
+    margin-top: 10px; 
+    font-size: 16px; 
+}
+
+.videos videos {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+.videos videos:hover {
+    transform: scale(1.05); 
+}
+#videos h4 {
+    font-size: 1em;
+    /* font-family: "Rozha One", serif;*/
+     font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+}
+
+        /*ESTILOS DE PAGINA COMENTARIOS*/ 
+    .contenedor3 h1 {
+            font-size: 10em;
+            font-family: "Rozha One", serif;
+           /* font-family: "Poppins", sans-serif;*/
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+    .contenedor3 h2 {
+            font-size: 3em;
+            margin-top: 10px; /* Espaciado entre h1 y h2 */
+            /*font-family: "Rozha One", serif;*/
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    .comentarios{
+        position: static;
+        border: 3px solid #73AD21;
+    }
+
+    
+
+        /*ESTILOS DE PAGINA REDES*/ 
+        /* Contenedor principal para organizar las secciones */
+.container5 {
+    display: flex;
+    /*justify-content: space-between;*/
+    padding: 0px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* Estilo para la sección de redes sociales con imágenes */
+.botones {
+    text-align: left;
+    margin: 10px 0;
+    width: 30%;
+}
+
+.botones h1 {
+    font-size: 3em;
+    font-family: "Rozha One", serif;
+   /* font-family: "Poppins", sans-serif;*/
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
+.botones a {
+    display: inline-block;
+    margin: 5px 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #027373;
+    text-align: center;
+}
+
+.botones a img {
+    display: block;
+    margin: 0 auto 5px;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.botones a:hover img {
+    transform: scale(1.2); /* Efecto de agrandar al pasar el mouse */
+}
+
+/* Estilo para la sección de video */
+.video {
+    text-align: left;
+    margin: 20px 0;
+    width: 40%;
+}
+
+.video h1 {
+    font-size: 3em;
+    font-family: "Rozha One", serif;
+   /* font-family: "Poppins", sans-serif;*/
+    font-weight: 600;
+    font-style: normal;
+}
+
+.video h5 {
+    font-size: 1em;
+    font-family: "Rozha One", serif;
+    /*font-family: "Poppins", sans-serif;*/
+    font-weight: 500;
+    font-style: normal;
+}
+
+.video video {
+    width: 235%; /* Hace que el video se ajuste al contenedor */
+    border-radius: 10px;
+}
+
+/* Estilo para la sección de giras */
+.giras {
+    width: 70%; /* El contenido de giras ocupa el 40% del ancho */
+    text-align: left;
+}
+
+.giras h1 {
+    font-size: 3.3em;
+    font-family: "Rozha One", serif;
+   /*font-family: "Poppins", sans-serif;*/
+    font-weight: 550;
+    font-style: normal;
+}
+
+.giras p {
+    font-size: 1em;
+   /*font-family: "Rozha One", serif;*/
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+.giras img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+            
+
+
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6em; /* Reduce el tamaño del h1 */
+    }
+
+    h2 {
+        font-size: 2.5em; /* Reduce el tamaño del h2 */
+    }
+
+    .container {
+        padding: 10px; /* Reduce el padding del contenedor */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Cambia la disposición a vertical */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .contenedor2 {
+        flex-direction: column; /* Cambia a disposición vertical */
+        padding: 20px; /* Reduce el padding */
+    }
+
+    .disco h1 {
+        font-size: 4em; /* Reduce el tamaño del h1 en disco */
+    }
+
+    .fotos, .videos {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta el tamaño de las columnas */
+    }
+
+    .botones, .video, .giras {
+        width: 100%; /* Asegura que ocupen todo el ancho */
+        text-align: center; /* Centra el texto */
+    }
+
+    .video video {
+        width: 100%; /* Asegura que el video no exceda el contenedor */
+    }
+
+    .descarga {
+        width: 100%; /* Hace que la descarga ocupe todo el ancho */
+        margin: 0; /* Elimina márgenes laterales */
+    }
+
+    footer {
+        font-size: 0.9em; /* Reduce el tamaño de la fuente del footer */
+        padding: 5px; /* Reduce el padding del footer */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 4em; /* Reduce aún más el tamaño del h1 */
+    }
+
+    h2 {
+        font-size: 2em; /* Reduce aún más el tamaño del h2 */
+    }
+
+    .nav-list li {
+        margin: 5px 0; /* Reduce el margen entre los elementos de la nav */
+    }
+
+    .contenedor3 h1 {
+        font-size: 8em; /* Ajusta el tamaño del h1 en comentarios */
+    }
+
+    .comentarios {
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .botones a img {
+        width: 40px; /* Ajusta el tamaño de las imágenes en los botones */
+        height: 40px; /* Ajusta el tamaño de las imágenes en los botones */
+    }
+
+    .giras h1 {
+        font-size: 2.5em; /* Ajusta el tamaño del h1 en giras */
+    }
+
+    .giras p {
+        font-size: 0.9em; /* Ajusta el tamaño del texto en giras */
+    }
+}
+
+
+
+
+/* Estilos para pantallas pequeñas - hasta 480px */
+@media (max-width: 480px) {
+    /* Ajusta el tamaño de los encabezados */
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /* Ajusta el espaciado y la orientación del menú de navegación */
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 5px 0;
+    }
+
+    /* Ajusta el ancho de la sección de descargas */
+    .descarga {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Estilos para pantallas medianas - hasta 768px */
+@media (max-width: 768px) {
+    /* Ajusta el tamaño de encabezados */
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    /* Reduce el tamaño de contenedores y espaciados */
+    .container, .contenedor2 {
+        padding: 10px;
+    }
+
+    /* Ajusta la cuadrícula de imágenes para mostrar menos columnas */
+    .fotos, .videos {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    /* Ajusta el ancho de la sección de video */
+    .video video {
+        width: 100%;
+    }
+}
+
+/* Estilos para pantallas grandes - hasta 1024px */
+@media (max-width: 1024px) {
+    /* Ajusta el tamaño de encabezados */
+    h1 {
+        font-size: 7em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    /* Ajusta la cuadrícula de fotos para mantener una disposición ordenada */
+    .fotos {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    /* Ajusta el ancho del contenedor principal */
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Otros estilos adaptativos */
+@media (max-width: 1200px) {
+    /* Ajusta el tamaño del footer para pantallas grandes */
+    footer {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .giras h1 {
+        font-size: 3em;
+    }
+}
